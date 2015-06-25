@@ -1,0 +1,290 @@
+/*!
+ * Nzacssa CSS Grid
+ *
+ * Created by Emmanuel Mansilla
+ */
+ 
+ 
+
+/* Reusable column setup */
+.clmn {
+    border:0px solid rgba(0,0,0,0);
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-background-clip:padding-box !important;
+    -webkit-background-clip:padding-box !important;
+    background-clip:padding-box !important;
+}
+
+
+
+    /* 1. 2 Column Grid 0px - 339px 
+    ----------------------------------------------------------------------------- 
+    
+   Width 1:    50.0%
+   Width 2:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 0px) and (max-width: 339px) {
+        
+        .clmn {
+            margin-left:0%;
+        	padding:0 0.5px;
+        }
+        
+        .row .clmn:first-child {
+            margin-left:0;
+        }
+        
+        
+        /*
+        Add your semantic classnames in alongside their correspondingWidths here. e.g.
+        
+        .wdt_3,
+        .nz_3,
+        .my_semantic_class_name {
+            ...
+        }
+        */
+        
+        .wdt_1,
+        .nz_1 {
+            width:50.0%;
+        }
+        .wdt_2,
+        .nz_2 {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
+    /* 2. 4 Column Grid 340px - 579px 
+    ----------------------------------------------------------------------------- 
+    
+   Width 1:    25.0%
+   Width 2:    50.0%
+   Width 3:    75.0%
+   Width 4:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 340px) and (max-width: 579px) {
+        
+        .clmn {
+            margin-left:0%;
+        	padding:0 0.5px;
+        }
+        
+        .row .clmn:first-child {
+            margin-left:0;
+        }
+        
+        
+        
+        .wdt_1,
+        .nz_1 {
+            width:25.0%;
+        }
+        .wdt_2,
+        .nz_2 {
+            width:50.0%;
+        }
+        .wdt_3,
+        .nz_3 {
+            width:75.0%;
+        }
+        .wdt_4,
+        .nz_4 {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
+    /* 3. 6 Column Grid 580px - 719px 
+    ----------------------------------------------------------------------------- 
+    
+   Width 1:    16.6666666667%
+   Width 2:    33.3333333333%
+   Width 3:    50.0%
+   Width 4:    66.6666666667%
+   Width 5:    83.3333333333%
+   Width 6:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 580px) and (max-width: 719px) {
+        
+        .row {
+            margin-left:-1px;
+        }
+        .clmn {
+            border-left-width:1px;
+        	padding:0 0.5px;
+        }
+        
+        
+        
+        
+        .wdt_1,
+        .nz_1 {
+            width:16.6666666667%;
+        }
+        .wdt_2,
+        .nz_2 {
+            width:33.3333333333%;
+        }
+        .wdt_3,
+        .nz_3 {
+            width:50.0%;
+        }
+        .wdt_4,
+        .nz_4 {
+            width:66.6666666667%;
+        }
+        .wdt_5,
+        .nz_5 {
+            width:83.3333333333%;
+        }
+        .wdt_6,
+        .nz_6 {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
+    /* 4. 8 Column Grid 720px - 959px 
+    ----------------------------------------------------------------------------- 
+    
+   Width 1:    12.5%
+   Width 2:    25.0%
+   Width 3:    37.5%
+   Width 4:    50.0%
+   Width 5:    62.5%
+   Width 6:    75.0%
+   Width 7:    87.5%
+   Width 8:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 720px) and (max-width: 959px) {
+        
+        .clmn {
+            margin-left:0%;
+        	padding:0 0.5px;
+        }
+        
+        .row .clmn:first-child {
+            margin-left:0;
+        }
+        
+        
+        
+        .wdt_1,
+        .nz_1 {
+            width:12.5%;
+        }
+        .wdt_2,
+        .nz_2 {
+            width:25.0%;
+        }
+        .wdt_3,
+        .nz_3 {
+            width:37.5%;
+        }
+        .wdt_4,
+        .nz_4 {
+            width:50.0%;
+        }
+        .wdt_5,
+        .nz_5 {
+            width:62.5%;
+        }
+        .wdt_6,
+        .nz_6 {
+            width:75.0%;
+        }
+        .wdt_7,
+        .nz_7 {
+            width:87.5%;
+        }
+        .wdt_8,
+        .nz_8 {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
+    /* 5. 10 Column Grid 960px - Infinity 
+    ----------------------------------------------------------------------------- 
+    
+   Width 1:    10%
+   Width 2:    20%
+   Width 3:    30%
+   Width 4:    40%
+   Width 5:    50%
+   Width 6:    60%
+   Width 7:    70%
+   Width 8:    80%
+   Width 9:    90%
+   Width 10:    100%
+    
+    ----------------------------------------------------------------------------- */
+
+    @media screen and (min-width: 960px) {
+        
+        .row {
+            margin-left:-1px;
+        }
+        .clmn {
+            border-left-width:1px;
+        	padding:0 0.5px;
+        }
+        
+        
+        
+        
+        .wdt_1,
+        .nz_1 {
+            width:10%;
+        }
+        .wdt_2,
+        .nz_2 {
+            width:20%;
+        }
+        .wdt_3,
+        .nz_3 {
+            width:30%;
+        }
+        .wdt_4,
+        .nz_4 {
+            width:40%;
+        }
+        .wdt_5,
+        .nz_5 {
+            width:50%;
+        }
+        .wdt_6,
+        .nz_6 {
+            width:60%;
+        }
+        .wdt_7,
+        .nz_7 {
+            width:70%;
+        }
+        .wdt_8,
+        .nz_8 {
+            width:80%;
+        }
+        .wdt_9 {
+            width:90%;
+        }
+        .wdt_1,
+        .nz_10 {
+            margin-left:0;
+            width:100%;
+        }
+    }
+
